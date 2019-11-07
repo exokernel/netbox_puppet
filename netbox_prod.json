@@ -1,0 +1,21 @@
+{
+  "netbox": {
+    "backup_path": "production",
+    "nbcat_workers": "6",
+    "netbox_workers": "8",
+    "postgres": {
+      "hba": [
+        "host all all 127.0.0.1/32 md5",
+        "host replication rep 127.0.0.1/32 md5 # for backups",
+        "host replication rep redacted/32 md5",
+        "host replication rep redacted/32 md5",
+        "host replication rep redacted/32 md5",
+        "host dummy monitor redacted/27 md5 # monitoring"
+      ],
+      "primary_ip": "redacted",
+      "version": "11"
+    },
+    "realsecure_server_name": "netbox.somedomain.com",
+    "server_name": "netbox.internal.somedomain.com"
+  },
+}

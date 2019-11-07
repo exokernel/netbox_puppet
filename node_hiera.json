@@ -1,0 +1,5 @@
+{
+  "netbox": {
+    "backup_host": true
+  }
+}
